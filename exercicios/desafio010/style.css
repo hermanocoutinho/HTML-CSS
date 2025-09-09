@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@font-face {   /*regra pra aplicar fonte */
+    font-family: 'idroid';    /*Nome da familia da fonte que vou usar */
+    src: url('fontes/idroid.otf') format('opentype');   /* Caminho do arq da fonte e formato opentpe */ 
+}
+
+body {
+    background-color: #dacaa2; /* cor de fundo */
+    margin: 0; /* remove a margem padrão do navegador */
+    padding: 0; /* remove o padding padrão do navegador */
+}
+
+main { /*estilos do conteúdo central*/
+    background-color: white;
+    width: 1100px;
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-image: linear-gradient(to bottom, #29cf8c, #2b8863, #1d5741);
+    padding: 35px 0 5px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.subtitulo {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+h1.subtitulo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.4em;
+    font-weight: 400;
+}
+
+h2.subtitulo {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.3em;
+    margin: 30px 0px 40px 0px; 
+}
+
+.links {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+nav {
+    padding: 30px 20px 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+    font-size: 1.1em;    
+}
+
+nav a {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(211, 209, 209);
+    text-decoration: none;
+    margin-right: 30px;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 10px;      
+}
+
+nav a:hover {
+    transform: scale(1.15);
+    background-color: #2b8863;        
+}
+
+article h2 {
+    font-family: 'idroid', sans-serif;
+    background-image: linear-gradient(to right, #83e1ad, #b7d1c3);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    border-radius: 3px; 
+}
+
+picture {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+h2#primario {
+    color: rgb(7, 63, 7);
+}
+
+h2.secundario {
+    color: rgb(7, 63, 7);
+}
+
+article p {
+    text-align: justify;
+    text-indent: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.1em;
+}
+
+.linkverde {
+    background-color: #62b989;
+    color: #000;
+    padding: 2px 4px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.linkverde::after{
+    content: "🔗";
+}
+
+#fotoirina {
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+    padding: 0;
+}
+
+#fotoandroid {
+    width: 30%; /* tamanho da imagem em relação a tela */
+    display: block; /* transforma em bloco, permite centralizar com margin */
+    margin: 25px auto; /* 20px a margem de cima e baixo, auto pra centralizar */
+    padding: 0; /* sem espaçamento interno */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 40%; /* retangular */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%; /* não passa da largura da tela*/
+    width: 100%; /* no celular ocupa 100% */
+    background: #000;
+    margin: 50px auto; /* centralizar */   
+}
+
+@media (min-width: 768px) {
+    .video-container {
+        width: 70%; /* ocupa 70% da tela no PC */
+        max-width: 700px; /* limite máximo */
+    }
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Quando a tela for menor que 600px (celular) */
+@media (max-width: 600px) {
+#fotoandroid {
+    width: 80%;
+    }
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    padding-inline: 15px; /* Atalho para left/right */
+  }
+
+nav a {
+    margin-right: 10px;
+    padding: 6px 10px;
+  }
+}  

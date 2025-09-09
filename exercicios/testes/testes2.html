@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de fonte</title>
+    <style>
+    html {
+      font-size: 16px; /* 1rem = 16px */
+    }
+
+    .pai {
+      font-size: 20px; /* referência para em */
+      border: 2px solid black;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .filho-em {
+      font-size: 2em; /* 2 × 20px (do pai) = 40px */
+      color: blue;
+    }
+
+    .filho-rem {
+      font-size: 2rem; /* 2 × 16px (html) = 32px */
+      color: red;
+    }
+  </style>
+</head>
+<body>
+    <div class="pai">
+    <div class="filho-em">Filho com em (40px)</div>
+    <div class="filho-rem">Filho com rem (32px)</div>
+    </div> 
+</body>
+</html>

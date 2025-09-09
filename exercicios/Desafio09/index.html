@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos de cursos</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-family: arial, sans-serif;
+    }
+
+    .grade {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .grade a img {
+       width: 300px; 
+       border-radius: 10px;
+       transition: transform 0.3s;
+    }
+
+    .grade a img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+</style>
+<body>
+    <h1>Videos para assistir</h1>
+
+<div class="grade">
+        
+    <a href="cursohtml.html">
+        <img src="imagens/thumb-html.png" alt="Video de HTML">
+
+    </a>
+
+    <a href="cursohardware.html">
+        <img src="imagens/thumb-hardware.png" alt="Video de Hardware">
+
+    </a>
+
+    <a href="cursojs.html">
+        <img src="imagens/thumb-js.png" alt="Video de JS">
+
+    </a>
+
+    <a href="cursopython.html">
+        <img src="imagens/thumb-python.png" alt="Video de Python">
+
+    </a>
+</div> 
+
+</body>
+</html>
